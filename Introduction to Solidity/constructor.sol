@@ -45,7 +45,13 @@ contract C is X,Y {
     
 contract D is X, Y {
     constructor() X("X was called") Y ("Y was called"){
-
-    }
+    }   
+}
+    // Order of constructors called :
+    // 1. X
+    // 2. Y
+    // 3. E
+contract E is X,Y {
+    constructor () Y("Y was called") X("X was called") {}
     
 }

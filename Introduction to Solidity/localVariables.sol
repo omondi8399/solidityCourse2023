@@ -9,6 +9,8 @@ contract localVariables{
     //Function for local variables
 
     function local() public  returns (address, uint256, uint256){
+        // Variables defined inside the function scope are not 
+        // stored on the blockchain.
         
         uint256 i = 345;
         myNumber = i;

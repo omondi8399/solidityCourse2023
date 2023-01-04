@@ -20,3 +20,7 @@ contract AssertStatement {
     }
 
 }
+
+// This statement is also used for error handling.
+//  When using it , we just the condition only.
+// Used also for debugging.

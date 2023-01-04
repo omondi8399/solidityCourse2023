@@ -4,7 +4,7 @@ pragma solidity ^0.8.13;
 
 //--Modifiers are code that can be run before and after the function call
 //--Generally used for three reasons
-//--Restrict access , validate inputs, Guard against reentrancy hack 
+//--Restrict access , validate inputs and Guard against reentrancy hack 
 
 contract FunctionModifier{
 
@@ -18,7 +18,7 @@ contract FunctionModifier{
 
     modifier onlyOwner(){
         require(msg.sender == owner, "Not Owner");
-        _;
+        _; // This means continue with the function further / exercute the next function
     }
 
     modifier validateData (address _addr){

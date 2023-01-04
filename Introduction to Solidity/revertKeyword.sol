@@ -15,3 +15,7 @@ contract RevertStatement{
     }
 
 }
+
+// Use for error handling 
+// It is the least used keyword
+// It is limited coz you can't use conditions for error checking

@@ -1,7 +1,7 @@
 //SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.13;
-//solidity error Hnadling
+//solidity error Handling
 contract Require {
    function checkInput(uint256 _input) public view returns(string memory){
        require(_input >= 0, "Invalid uint8");
@@ -17,3 +17,5 @@ contract Require {
    }
 
 }
+
+//Use for Debugging

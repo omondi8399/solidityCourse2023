@@ -13,3 +13,6 @@ contract Pure{
         return (knum1, knum2);
     }
 }
+
+// You can use pure when you aren't accessing any state variable
+// But when accessing local and state variables, you can use view.

@@ -21,7 +21,8 @@ contract Todos {
         //initialize an empty struct and then update it
         Todo memory todo;
         todo.text = _text;
-        //todo.completed initialized to false
+
+        // todo completed initialized to false
 
         todos.push(todo); 
     }
@@ -41,7 +42,7 @@ contract Todos {
 
     //update completed
     function toggleCompleted (uint _index) public {
-        Todo storage todos [_index];;
+        Todo storage todos [_index];
         todo.completed = !todo.completed;
     }
 

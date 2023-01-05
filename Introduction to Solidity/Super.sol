@@ -15,10 +15,10 @@ contract A {
        // This is called an event. You can emit events from your function 
        // and they are logged into the transaction log.
        // In our case, this will be useful for tracing function calls.
-       event log(string message);
+        event log(string message);
 
-       function foo() public virtual {
-           emit Log("A.foo called");
+        function foo() public virtual {
+            emit Log("A.foo called");
        }
 
        function bar () public virtual {

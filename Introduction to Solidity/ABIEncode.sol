@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.13;
 
-interface ERC20 { 
+interface IERC20 { 
     function transfer(address, uint) external;
 }
 
@@ -26,16 +26,16 @@ contract AbiEncode {
     }
 
     function encodeWithSelector(address to, uint amount)
-         external
-         pure
-         returns (bytes memory)
-         {
-             // Typo is not checked - (ERC20.transfer.selector, true, amount)
-             return abi.encodeWithSelector(IERC20.transfer.selector, to, amount);
-         }
+        external
+        pure
+        returns (bytes memory)
+        {
+             // Typo is not checked - (IERC20.transfer.selector, true, amount)
+        return abi.encodeWithSelector(IERC20.transfer.selector, to, amount);
+        }
 
-         function encodeCall(address to, uint amount) external pure returns (bytes memory uint){
+        function encodeCall(address to, uint amount) external pure returns (bytes memory uint){
              // Typo and type errors will not compile
-             return abi.encodeCall(ERC20.transfer, (to, amount));
-         }
+        return abi.encodeCall(IERC20.transfer, (to, amount));
+        }
 }

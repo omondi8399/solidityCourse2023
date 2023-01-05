@@ -18,3 +18,5 @@ contract Event {
     }
 
 }
+
+// Using events to store data on te blockchain is cheaper when compared to using state variables

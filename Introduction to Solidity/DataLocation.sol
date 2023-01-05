@@ -29,7 +29,7 @@ contract DataLocations {
     }
 
     //you can return memory variables
-    function g(uint[] memory _arr) public returns (uint memory) {
+    function g(uint[] memory _arr) public returns (uint[] memory) {
         //do something with memory array
     }
 
@@ -37,3 +37,7 @@ contract DataLocations {
         //do something with calldata array
     }
 }
+
+// storage -data is stored in the blockchain
+// memory - data is stored in a function
+// calldata - data is an argument

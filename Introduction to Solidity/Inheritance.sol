@@ -12,7 +12,7 @@ pragma solidity ^0.8.13;
 */
 
 contract A {
-    function foo() public virtual returns (string memory) {
+    function foo() public pure virtual returns (string memory) {
         return "A";
     }
  }
